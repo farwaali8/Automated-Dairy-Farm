@@ -1,0 +1,318 @@
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --dark-red: #8b0000;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(var(--color-light));
+}
+
+#notificationContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  color: var(--color-warning);
+}
+
+notification {
+  transition: opacity 0.3s ease;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
+.notification.hide {
+  opacity: 0;
+}
+
+.main .reportCards {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 10px;
+}
+
+main .reportCards .reportTable table {
+  width: 90%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+main .reportCards .reportTable table thead {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  height: 2.5rem;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination .active {
+  background-color: #ccc;
+}
+
+.pagination {
+  width: 90%;
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.dailyReportChart {
+  width: 100%;
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+}
+
+.filter {
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+  margin-left: 2rem;
+}
+
+#filterlabel {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#cowFilter {
+  height: 2rem;
+  text-indent: 10px;
+  border-radius: none;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+.filter button {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-info-light);
+  background: var(--color-dark-variant);
+  border-radius: var(--border-radius-1);
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.searchTable table {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.searchTable table thead {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.reportLinks {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.reportLinks a {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 400;
+  outline: 2px solid black;
+  padding: 0 10px 0 10px;
+  border-radius: var(--border-radius-1);
+}
+
+.weeklyReports {
+  display: none;
+}
+
+.monthlyReports {
+  display: none;
+}
+
+.click {
+  background: #64b5f6;
+}
+
+.chart {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.low {
+  background: orange;
+}
+
+.intro {
+  width: 300px;
+  height: 50px;
+  font-size: 1rem;
+  color: var(--color-dark);
+  background: var(--color-light);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  padding: 5px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-2);
+}
+
+.healthChart {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 40%;
+}
+
+.buttonsss {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  justify-content: start;
+}
+
+.buttonsss h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.buttonsss button {
+  cursor: pointer;
+  width: 3cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-dark);
+  border-radius: var(--border-radius-1);
+  margin-left: 2rem;
+}
+
+.sicktable table {
+  width: 100%;
+  margin: 2rem;
+  text-align: center;
+}
+
+.sicktable table thead {
+  color: var(--color-white);
+  background: var(--color-dark);
+}
+
+.sicktable table tr:hover {
+  transform: none;
+}
+
+.sicktable table button {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+}
+
+.animalTable button {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+}
+
+.ffff form {
+  width: 100%;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  gap: 1rem 0;
+}
+
+.ffff input[type="text"],input[type="date"]
+{
+  width: 6cm;
+  height: 0.8cm;
+  outline: 2px solid var(--color-dark);
+  color: var(--color-dark);
+  text-indent: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: var(--border-radius-1);
+  background: var(--color-background);
+  font-size: 1rem;
+
+}
+
+.ffff select {
+  width: 6cm;
+}
+
+.ffff input[type="submit"] {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+  margin-left: 0.5rem;
+}
+
+#cowweeklychart{
+  margin-top: 4rem;
+}
+
+main .profileS {
+  margin-top: 2rem;
+  margin-left: 1cm;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+}
+
+main .profileS l {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+
+
+main .profileS r {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+
+
+
+
+
+

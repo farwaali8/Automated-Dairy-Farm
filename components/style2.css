@@ -1,0 +1,580 @@
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --dark-red: #8b0000;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding: 1.2rem;
+
+  --box-shadow: 0 2rem 3rem var(var(--color-light));
+}
+
+main .woo form table {
+  margin-top: 2rem;
+  background: var(--color-white);
+  width: 90%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+main .woo form table:hover {
+  box-shadow: none;
+}
+
+main .woo form table tbody tr:hover {
+  transform: none;
+}
+
+main .woo form table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+}
+
+main .woo form table tbody input {
+  background: var(--color-white);
+  color: var(--color-dark);
+  outline: none;
+}
+
+main .woo form .header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem 0;
+  background: #111e88;
+}
+
+main .woo form input[type="date"] {
+  color: var(--color-dark);
+  text-indent: 10px;
+  width: 4cm;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  background: var(--color-background);
+  margin-left: 0.5rem;
+  outline: 2px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+main .woo form .price {
+  background: var(--color-white);
+  color: var(--color-dark);
+  text-indent: 10px;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  background: var(--color-background);
+  margin-left: 0.5rem;
+  outline: 2px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+main .woo form .expense {
+  background: var(--color-white);
+  color: var(--color-dark);
+  text-indent: 10px;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  background: var(--color-background);
+  margin-left: 0.5rem;
+  outline: 2px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+main .woo form label {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+main form .milkPrice {
+  margin-left: 1rem;
+}
+
+main .smallcardbox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+main .smallcardbox .smallcard {
+  height: 6rem;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow);
+}
+
+main .smallcardbox .milk {
+  background: #2196f3;
+}
+
+main .smallcardbox .expense {
+  background: #f44336;
+}
+
+main .smallcardbox .price {
+  background: #ff9800;
+}
+
+main .smallcardbox .profit {
+  background: #4caf50;
+}
+
+main .smallcardbox .smallcard .milkqnt {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+main .smallcardbox .smallcard .text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 0.7rem;
+}
+
+main .titles {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-left: 0.8cm;
+}
+
+main .outerContainer {
+  width: 100%;
+  text-align: center;
+  margin-left: 1cm;
+}
+
+main .outerContainer .chart-container {
+  margin-top: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+main .topBar {
+  display: grid;
+  grid-template-columns: 6cm 10cm;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+main .topBar .pageTitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-left: 0.8cm;
+}
+
+main .topBar .search {
+  display: flex;
+  gap: 10px;
+}
+
+main .topBar .search input {
+  width: 10cm;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  background: var(--color-background);
+  text-indent: 10px;
+  outline: 2px solid var(--color-primary);
+  border-radius: var(--border-radius-3);
+}
+
+main .topBar .search button {
+  cursor: pointer;
+  width: 3cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+.right .addDailyExpense {
+  background: #cfd8dc;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border-radius: var(--border-radius-3);
+  box-shadow: var(--box-shadow);
+  padding: 1.4rem var(--card-padding);
+  width: 6cm;
+  height: 4cm;
+  gap: 1rem;
+  margin-left: 4cm;
+}
+
+.right .addDailyExpense:hover {
+  box-shadow: none;
+}
+
+.right .addDailyExpense h3 {
+  color: black;
+}
+
+.right .addDailyExpense input {
+  color: black;
+  outline: 2px solid #363949;
+  border-radius: var(--border-radius-1);
+  background: none;
+}
+
+.right .addDailyExpense input[type="date"] {
+  text-indent: 5px;
+  width: 3cm;
+}
+
+.right .addDailyExpense input[type="number"] {
+  text-indent: 10px;
+  width: 3cm;
+  height: 2rem;
+}
+
+.right .addDailyExpense button {
+  cursor: pointer;
+  width: 1.5cm;
+  height: 2rem;
+  color: white;
+  background: #363949;
+  border-radius: var(--border-radius-1);
+  margin-left: 0.2rem;
+}
+
+main .group {
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 2rem;
+  margin-left: 0.8cm;
+  margin-top: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1rem 0;
+}
+
+main .subtitles:first-child {
+  margin-top: 2rem;
+}
+
+main .subtitles {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 0.8cm;
+}
+
+.cardA{
+  background: #FFCDD2;
+}
+
+.cardB{
+  background: #BBDEFB;
+}
+
+.cardC{
+  background: #FFCCBC;
+}
+
+.groupA {
+  color: #EF5350;
+}
+
+.groupB {
+  color: #42A5F5;
+}
+
+.groupC {
+  color: #E64A19;
+}
+
+main .group .groupName {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+main .group .graph {
+  margin-right: 1rem;
+  margin-top: 0.6rem;
+}
+
+main .group .cowList {
+  margin-top: 0.8rem;
+}
+
+main .group .cowList ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1rem;
+  padding: 1px;
+  color: black;
+}
+
+main .group .cowList ul li:hover {
+  cursor: pointer;
+  color: darkblue;
+  transform: scale(1.02);
+}
+
+main .group .cowList ul h2 {
+  color: black;
+}
+
+.empty {
+  text-align: center;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+main form input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main .groupsTitle {
+  margin-top: 2rem;
+}
+
+main .groupsDash {
+  width: 100%;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 52% 48%;
+}
+
+main .groupsDash .groupADash {
+  background: #ef5350;
+}
+
+main .groupsDash .groupBDash {
+  background: #42a5f5;
+}
+
+main .groupsDash .groupCDash {
+  background: #e64a19;
+}
+
+main .profileChartHolder {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  margin-left: 1cm;
+}
+
+main .profileChartHolder .profileChart {
+  margin-top: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+main .breed {
+  margin-top: 2rem;
+}
+
+main .breed .breedTop {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 1rem;
+  align-items: center;
+}
+
+main .breed .breedTop .deletebreedbtn {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+}
+
+main .breed .cows table {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+main .breed .cows table thead {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+main .addnewbreed {
+  padding: 20px;
+}
+
+main .addnewbreed div {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+main .addnewbreed .newbreedgrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 6cm 3cm;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .addnewbreed .newbreedgrid input {
+  width: 6cm;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  background: var(--color-background);
+  text-indent: 10px;
+  outline: 1.2px solid var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+main .addnewbreed .newbreedgrid button {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-dark);
+  border-radius: var(--border-radius-1);
+}
+
+main .addnewbreed #addbreedmsg {
+  margin-left: 30px;
+  margin-top: 0.4rem;
+}
+
+main #profileEditButton {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-primary);
+  border-radius: var(--border-radius-1);
+  margin-left: 40px;
+  margin-bottom: -1rem;
+  margin-top: 3rem;
+}
+
+main #general-btn {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-white);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+  display: none;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+main .profileTop {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: baseline;
+  gap: 3rem;
+}
+
+.glow {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+}
+main form .headinside {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+main .topOfReports {
+  margin-top: 3rem;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  gap: 0.6rem;
+  background: var(--color-dark);
+  border-radius: var(--border-radius-1);
+  align-items: first baseline;
+  justify-content: start;
+}
+
+main .topOfReports select {
+  height: 2rem;
+  text-indent: 10px;
+  border-radius: none;
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+main .topOfReports select:hover {
+  cursor: pointer;
+}
+
+main .underTop {
+  width: 100%;
+  text-align: right;
+}
+
+main .underTop button {
+  cursor: pointer;
+  width: 2cm;
+  height: 2rem;
+  color: var(--color-dark);
+  background: var(--color-danger);
+  border-radius: var(--border-radius-1);
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+main .duration {
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+main .updatemsg {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-primary-variant);
+  margin-left: 2rem;
+}
+
